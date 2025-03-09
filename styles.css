@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a23;
+    color: #fff;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.stats-panel {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.stat-item {
+    font-size: 18px;
+}
+
+.stat-item span {
+    margin-right: 10px;
+}
+
+.game-area {
+    width: 800px;
+    height: 500px;
+    background: url('space-bg.jpg') no-repeat center;
+    background-size: cover;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#player-ship {
+    width: 50px;
+    height: 50px;
+    background: url('ship.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.treasures {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.enemies {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background: #1e90ff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4169e1;
+}
+
+.instructions {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.instructions p {
+    margin: 2px;
+}
+
+.game-over-modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.game-over-modal h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.game-over-modal p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.game-over-modal button {
+    background: #ff4500;
+}
+
+.game-over-modal button:hover {
+    background: #ff6347;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a23;
+    color: #fff;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: linear-gradient(180deg, #0a0a23, #1b1b4f);
+}
+
+.stats-panel {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.stat-item {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.stat-item span {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.game-area {
+    width: 800px;
+    height: 500px;
+    background: url('space-bg.jpg') no-repeat center;
+    background-size: cover;
+    border: 3px solid #00b7eb;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#player-ship {
+    width: 50px;
+    height: 50px;
+    background: url('ship.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transition: all 0.1s ease;
+}
+
+.treasures .treasure {
+    width: 20px;
+    height: 20px;
+    background: gold;
+    border-radius: 50%;
+    position: absolute;
+    animation: float 3s infinite ease-in-out;
+}
+
+.enemies .enemy {
+    width: 40px;
+    height: 40px;
+    background: url('meteor.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    animation: moveEnemy 5s linear infinite;
+}
+
+.controls {
+    margin-top: 15px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 5px;
+    background: #1e90ff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4169e1;
+}
+
+button:active {
+    background: #2f4f7f;
+}
+
+.instructions {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.instructions p {
+    margin: 3px;
+    padding: 2px;
+}
+
+.game-over-modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.game-over-modal h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #ff4500;
+}
+
+.game-over-modal p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.game-over-modal button {
+    background: #ff4500;
+    padding: 15px 30px;
+}
+
+.game-over-modal button:hover {
+    background: #ff6347;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes moveEnemy {
+    0% { transform: translateX(800px); }
+    100% { transform: translateX(-50px); }
+}
+
+@media (max-width: 600px) {
+    .game-area {
+        width: 100%;
+        height: 400px;
+    }
+    .stats-panel {
+        width: 90%;
+        font-size: 16px;
+    }
+    #player-ship {
+        width: 40px;
+        height: 40px;
+    }
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+/* Avvalgi CSS kodining 150 qatori bu yerda qoladi... */
+
+/* Yangi elementlar uchun qo‘shimcha stilar */
+.stat-item #crystal-count, .stat-item #weapon-display, .stat-item #high-score {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.game-over-anim, .boss-defeat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-shadow: 0 0 10px #000;
+    animation: fadeOut 3s ease-out;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
